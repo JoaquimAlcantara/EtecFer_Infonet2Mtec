@@ -35,7 +35,7 @@ public class AlunoController {
     public String listar(Model model) {
         List<Aluno> alunos = alunoService.findAll();
         model.addAttribute("alunos", alunos);
-        return "aluno/ListarAlunos";
+        return "aluno/listarAlunos";
     }
 
     //Método para criar um formulário com um novo objeto aluno

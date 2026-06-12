@@ -36,5 +36,4 @@ public class Aluno {
     @Column(nullable = false, length = 11)
     private String cpfAluno;
 
-    
 }
