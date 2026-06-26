@@ -28,7 +28,7 @@ public class AlunoController {
     //Método para salvar um aluno
     @PostMapping("/salvar")
     public String salvar(@ModelAttribute Aluno aluno) {
-        alunoService.save(aluno);        
+        alunoService.save(aluno);    
         return "redirect:/alunos/listar";
     }
     
