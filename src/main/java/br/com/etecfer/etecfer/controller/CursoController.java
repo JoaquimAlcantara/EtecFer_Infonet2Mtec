@@ -42,8 +42,8 @@ public class CursoController {
     //Método para criar um formulário com um novo objeto curso
     @GetMapping("/criar")
     public String criarForm(Model model) {
-        model.addAttribute("cursos", new Curso());
-        return "curso/formularioCurso";
+    model.addAttribute("curso", new Curso());
+    return "curso/formularioCurso";
     }
     
     //Método para excluir um curso

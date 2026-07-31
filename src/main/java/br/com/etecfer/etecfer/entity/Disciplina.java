@@ -25,10 +25,10 @@ public class Disciplina {
     private String nomeDisciplina;
 
     @Column(length = 10)
-    private String graduacaoSigla;
+    private String siglaDisciplina;
 
     @Column(nullable = false, length = 15)
-    private Integer chCurso;
+    private Integer chDisciplina;
 
     
 }

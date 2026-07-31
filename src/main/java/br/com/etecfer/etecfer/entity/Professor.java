@@ -25,10 +25,10 @@ public class Professor {
     private String nomeProfessor;
     
     @Column(nullable = false, length = 11)
-    private String telefoneProfessor;
+    private String telProfessor;
 
     @Column(nullable = false, length = 11)
-    private String cpfAluno;
+    private String cpfProfessor;
 
     @Column(length = 40)
     private String graduacaoProfessor;

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Professores</title>
+    <title>Lista de professores</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Listar Professores</h1>
-    <h3 style="text-align: center;">
-        <a href="/professores/criar">Novo Professor</a>
+    <h1 style="text-align: center;">Lista de Professores </h1>
+     <h3 style="text-align: center;">
+      <a href="/professores/criar"> Novo Professor</a>
     </h3>
-    <table border="1" align="center">
+     <table border="1" align="center">
         <tr>
             <th>Nome</th>
             <th>Telefone</th>
@@ -20,16 +20,15 @@
             <th colspan="2">Ações</th>
         </tr>
         <tr th:each="professor:${professores}">
-            <td th:text="${professor.nomeProfessor}">*</td>
-            <td th:text="${professor.telefoneProfessor}">*</td>
-            <td th:text="${professor.cpfProfessor}">*</td>
-            <td th:text="${professor.graduacaoProfessor}">*</td>
+            <td th:text="${professor.nomeProfessor}">#</td>
+            <td th:text="${professor.telProfessor}">#</td>
+            <td th:text="${professor.cpfProfessor}">#</td>
+            <td th:text="${professor.graduacaoProfessor}">#</td>
             <td>
                 <a th:href="@{/professores/editar/{id}(id=${professor.idProfessor})}">Editar</a>
                 <a th:href="@{/professores/excluir/{id}(id=${professor.idProfessor})}">Excluir</a>
-            </td>
+            </td>          
         </tr>
-    </table>
-    
+     </table>
 </body>
 </html>

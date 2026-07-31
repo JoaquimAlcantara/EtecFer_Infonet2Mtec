@@ -33,6 +33,7 @@ public class DisciplinaController {
    @GetMapping("/listar")
     public String listar(Model model) {
         List<Disciplina> disciplinas = disciplinaService.findAll();
+        model.addAttribute("disciplinas", disciplinas);
         return "disciplina/listarDisciplinas";
     }
    
@@ -40,7 +41,7 @@ public class DisciplinaController {
    @GetMapping("/criar")
     public String criarForm(Model model) {
         model.addAttribute("disciplina", new Disciplina());
-        return "professor/formularioProfessor";
+        return "disciplina/formularioDisciplina";
     }
    
    //Método para excluir uma disciplina
