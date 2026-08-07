@@ -1,0 +1,132 @@
+:root {
+    --etec-navy: #1B3358;
+    --etec-navy-light: #2C4A78;
+    --etec-amber: #E4A73B;
+    --etec-bg: #F5F6F8;
+    --etec-surface: #FFFFFF;
+    --etec-text: #232733;
+    --etec-muted: #6B7280;
+  }
+  
+  body {
+    background-color: var(--etec-bg);
+    color: var(--etec-text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  h1, h2, h3, h4, .navbar-brand {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar-etec {
+    background-color: var(--etec-navy);
+  }
+  
+  .navbar-etec .navbar-brand {
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: .5px;
+  }
+  
+  .navbar-etec .nav-link {
+    color: rgba(255, 255, 255, .85);
+    position: relative;
+    padding-bottom: .35rem;
+    font-weight: 500;
+  }
+  
+  .navbar-etec .nav-link:hover,
+  .navbar-etec .nav-link.active {
+    color: #fff;
+  }
+  
+  .navbar-etec .nav-link.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3px;
+    background: var(--etec-amber);
+    border-radius: 2px;
+  }
+  
+  /* Hero (index) */
+  .etec-hero {
+    background: linear-gradient(135deg, var(--etec-navy) 0%, var(--etec-navy-light) 100%);
+    color: #fff;
+    border-radius: .75rem;
+  }
+  
+  .etec-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+  }
+  
+  .etec-card-link .card {
+    transition: transform .15s ease, box-shadow .15s ease;
+    border: 1px solid #E7E9EE;
+  }
+  
+  .etec-card-link:hover .card {
+    transform: translateY(-4px);
+    box-shadow: 0 .75rem 1.5rem rgba(27, 51, 88, .12);
+  }
+  
+  .etec-badge {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--etec-amber);
+    color: var(--etec-navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+  }
+  
+  /* Botões e tabelas */
+  .btn-etec {
+    background-color: var(--etec-navy);
+    border-color: var(--etec-navy);
+    color: #fff;
+  }
+  
+  .btn-etec:hover {
+    background-color: var(--etec-navy-light);
+    border-color: var(--etec-navy-light);
+    color: #fff;
+  }
+  
+  .table thead {
+    background-color: var(--etec-navy);
+    color: #fff;
+  }
+  
+  .table thead th {
+    border-color: var(--etec-navy);
+    font-weight: 500;
+    vertical-align: middle;
+  }
+  
+  .form-control:focus,
+  .form-select:focus {
+    border-color: var(--etec-navy-light);
+    box-shadow: 0 0 0 .2rem rgba(27, 51, 88, .15);
+  }
+  
+  .card-form {
+    max-width: 640px;
+    margin: 0 auto;
+    border: 1px solid #E7E9EE;
+  }
